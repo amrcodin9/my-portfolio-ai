@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amr Abdo — 17 year old web developer from Sadat City, Egypt. HTML, CSS and JavaScript.">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Amr Abdo | Portfolio</title>
+    <script>document.documentElement.classList.add("js");</script>
+
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="Css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- New design (separate from the original portfolio.css) -->
+    <link rel="stylesheet" href="Css/portfolio-v2.css" />
+</head>
+<body>
+    <div class="progress" id="progress"></div>
+
+    <!-- Start Header / Navigation -->
+    <header class="nav-wrap">
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#home" class="nav-link" data-link="home"><i class="fa-solid fa-house"></i><span>Home</span></a>
+            <a href="#services" class="nav-link" data-link="services"><i class="fa-solid fa-layer-group"></i><span>Services</span></a>
+            <a href="#about" class="nav-link" data-link="about"><i class="fa-solid fa-user"></i><span>About</span></a>
+            <a href="#skills" class="nav-link" data-link="skills"><i class="fa-solid fa-code"></i><span>Skills</span></a>
+            <a href="#projects" class="nav-link" data-link="projects"><i class="fa-solid fa-folder-open"></i><span>Projects</span></a>
+            <a href="#contact" class="nav-link" data-link="contact"><i class="fa-solid fa-paper-plane"></i><span>Contact</span></a>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <main>
+    <!-- Start Home -->
+    <section class="home" id="home" data-section="home">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="container home-grid">
+            <div class="home-text reveal">
+                <span class="hello"><i class="fa-solid fa-hand"></i> Hello, I'm</span>
+                <h1 class="name">Amr <span class="grad">Abdo</span></h1>
+                <h2 class="role">I'm a <span id="typed" class="typed"></span><span class="cursor">|</span></h2>
+                <p class="lead">
+                    17 years old, from Sadat City, Egypt. I build modern, responsive websites
+                    with clean code and a focus on a great user experience — and I'm getting better every single day.
+                </p>
+                <div class="actions">
+                    <!-- Put your CV file at CV/Amr-Abdo-CV.pdf -->
+                    <a class="btn btn-primary" href="CV/Amr-Abdo-CV.pdf" download><i class="fa-solid fa-download"></i> Download CV</a>
+                    <a class="btn btn-ghost" href="#contact"><i class="fa-solid fa-envelope"></i> Contact me</a>
+                </div>
+                <div class="socials">
+                    <a href="https://instagram.com/itsamrabdo" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/amrcodin9" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <!-- Add your LinkedIn link here when you make one:
+                    <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a> -->
+                </div>
+            </div>
+            <div class="home-photo reveal">
+                <div class="photo-frame">
+                    <img src="Images/my-photo.jpg" alt="Amr Abdo" width="702" height="936">
+                </div>
+                <div class="chip chip-a"><i class="fa-solid fa-location-dot"></i> Sadat City, EG</div>
+                <div class="chip chip-b"><i class="fa-solid fa-graduation-cap"></i> Always learning</div>
+            </div>
+        </div>
+        <a href="#services" class="scroll-hint" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+    <!-- End Home -->
+
+    <!-- Start Services -->
+    <section class="section services" id="services" data-section="services">
+        <div class="container">
+            <div class="heading reveal">
+                <span class="tag">What I do</span>
+                <h2>Services</h2>
+                <p>Designing clean, scalable, responsive websites</p>
+            </div>
+            <div class="box-container">
+                <div class="box reveal">
+                    <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Websites built with HTML, CSS and JavaScript that are clean, consistent and reliable.</p>
+                    <ul class="pills"><li>Modern layouts</li><li>Smooth interactions</li></ul>
+                </div>
+                <div class="box reveal">
+                    <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Pages that look great on phones, tablets and desktops — one site, every screen.</p>
+                    <ul class="pills"><li>Mobile first</li><li>Flexbox &amp; Grid</li></ul>
+                </div>
+                <div class="box reveal">
+                    <div class="icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Frontend / UI</h3>
+                    <p>Turning ideas and designs into pixel-friendly interfaces that are easy to use.</p>
+                    <ul class="pills"><li>Clean UI</li><li>Animations</li></ul>
+                </div>
+                <div class="box reveal">
+                    <div class="icon"><i class="fa-solid fa-id-card"></i></div>
+                    <h3>Personal Sites</h3>
+                    <p>Portfolios and landing pages that present you or your small business professionally.</p>
+                    <ul class="pills"><li>Portfolio</li><li>Landing pages</li></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+
+    <!-- Start About -->
+    <section class="section about" id="about" data-section="about">
+        <div class="container about-grid">
+            <div class="about-text reveal">
+                <span class="tag">Who am I</span>
+                <h2>About me</h2>
+                <p>
+                    Hi! I'm <strong>Amr</strong>, a 17-year-old web developer from <strong>Sadat City, Egypt</strong>.
+                    I fell in love with programming and started my journey with the three building blocks of the web.
+                </p>
+                <p>
+                    I've learned <strong>HTML</strong> and <strong>CSS</strong>, and I'm still learning
+                    <strong>JavaScript</strong> step by step. I enjoy turning an empty page into something
+                    that works and looks good — and every project teaches me something new.
+                </p>
+                <p>My goal: keep building, keep learning, and become a professional developer.</p>
+            </div>
+            <ul class="facts reveal">
+                <li><i class="fa-solid fa-cake-candles"></i><div><small>Age</small><b>17 years old</b></div></li>
+                <li><i class="fa-solid fa-location-dot"></i><div><small>Location</small><b>Sadat City, Egypt</b></div></li>
+                <li><i class="fa-solid fa-laptop-code"></i><div><small>Focus</small><b>Web Development</b></div></li>
+                <li><i class="fa-solid fa-heart"></i><div><small>Passion</small><b>Programming</b></div></li>
+            </ul>
+        </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Start Quote banner -->
+    <section class="banner" aria-label="Quote">
+        <div class="container reveal">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Every expert was once a beginner. Keep climbing.</p>
+        </div>
+    </section>
+    <!-- End Quote banner -->
+
+    <!-- Start Skills -->
+    <section class="section skills" id="skills" data-section="skills">
+        <div class="container">
+            <div class="heading reveal">
+                <span class="tag">My toolbox</span>
+                <h2>Skills</h2>
+                <p>What I use today, and what I'm learning next</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill reveal">
+                    <div class="skill-top"><span><i class="fa-brands fa-html5"></i> HTML</span><b data-count="85">0%</b></div>
+                    <div class="bar"><span data-level="85"></span></div>
+                </div>
+                <div class="skill reveal">
+                    <div class="skill-top"><span><i class="fa-brands fa-css3-alt"></i> CSS</span><b data-count="80">0%</b></div>
+                    <div class="bar"><span data-level="80"></span></div>
+                </div>
+                <div class="skill reveal">
+                    <div class="skill-top"><span><i class="fa-brands fa-js"></i> JavaScript <em>learning</em></span><b data-count="45">0%</b></div>
+                    <div class="bar"><span data-level="45"></span></div>
+                </div>
+                <div class="skill reveal">
+                    <div class="skill-top"><span><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span><b data-count="75">0%</b></div>
+                    <div class="bar"><span data-level="75"></span></div>
+                </div>
+            </div>
+            <div class="next reveal">
+                <h3>Learning next</h3>
+                <ul class="pills">
+                    <li><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</li>
+                    <li><i class="fa-brands fa-js"></i> Advanced JavaScript</li>
+                    <li><i class="fa-brands fa-react"></i> React</li>
+                    <li><i class="fa-brands fa-sass"></i> Sass</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills -->
+
+    <!-- Start Projects -->
+    <section class="section projects" id="projects" data-section="projects">
+        <div class="container">
+            <div class="heading reveal">
+                <span class="tag">My work</span>
+                <h2>Projects</h2>
+                <p>Things I've built while learning</p>
+            </div>
+            <div class="project-grid">
+                <article class="project reveal">
+                    <div class="thumb thumb-a"><i class="fa-solid fa-id-badge"></i></div>
+                    <div class="body">
+                        <h3>My Portfolio</h3>
+                        <p>The website you're looking at — built from scratch with HTML, CSS and JavaScript.</p>
+                        <ul class="pills"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+                        <a class="link" href="https://github.com/amrcodin9" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+                <!-- Copy this block for every new project, then change the title, text and link -->
+                <article class="project reveal soon">
+                    <div class="thumb thumb-b"><i class="fa-solid fa-hammer"></i></div>
+                    <div class="body">
+                        <h3>Next Project</h3>
+                        <p>Something new is being built right now. Stay tuned!</p>
+                        <ul class="pills"><li>Coming soon</li></ul>
+                    </div>
+                </article>
+                <article class="project reveal soon">
+                    <div class="thumb thumb-c"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="body">
+                        <h3>Another Idea</h3>
+                        <p>More projects will land here as my JavaScript skills grow.</p>
+                        <ul class="pills"><li>Coming soon</li></ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- End Projects -->
+
+    <!-- Start Contact -->
+    <section class="section contact" id="contact" data-section="contact">
+        <div class="container">
+            <div class="contact-card reveal">
+                <span class="tag">Get in touch</span>
+                <h2>Let's build something together</h2>
+                <p>Have an idea, a question, or just want to say hi? Send me a message — I'd love to hear from you.</p>
+                <div class="actions center">
+                    <a class="btn btn-primary" href="https://instagram.com/itsamrabdo" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Message on Instagram</a>
+                    <a class="btn btn-ghost" href="https://github.com/amrcodin9" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+    </main>
+
+    <!-- Start Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year">2026</span> Amr Abdo. Made with <i class="fa-solid fa-heart"></i> in Sadat City, Egypt.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="Js/main.js"></script>
+</body>
+</html>
